@@ -56,10 +56,7 @@ app.use(async (req, res, next) => {
 
 //auth layer
 
-app.use(cors({
-    origin: 'http://localhost:3000',
-    credentials: true
-}))
+app.use(cors())
 
 //auth middleware
 app.use((req, res, next) => {
